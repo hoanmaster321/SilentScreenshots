@@ -18,6 +18,12 @@ return CGRectMake(0, 0, 430, 54);
 	            %orig;
 return CGRectMake(0, -19, 430, 35);
 }
+
+%hook _UIStatusBarForegroudView
+- (CGRect)frame {
+	            %orig;
+return CGRectMake(0, 19, 430, 35);
+}
 //- (CGRect)bounds {
 //	            %orig;
 //return CGRectMake(-5, -19, 425, 54);
