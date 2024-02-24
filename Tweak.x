@@ -16,7 +16,7 @@ return CGRectMake(0, 0, 425, 54);
 %hook _UIStatusBarForegroundView
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, 0, 425, 54);
+return CGRectMake(2, 19, 425, 54);
 }
 - (CGRect)bounds {
 	            %orig;
