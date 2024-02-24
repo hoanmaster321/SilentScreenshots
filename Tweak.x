@@ -20,3 +20,18 @@ return CGPointMake(215, 37);
 
 
 
+%hook _UIStatusBar
+- (CGRect)frame {
+	            %orig;
+return CGRectMake(0, 10, 430, 44);
+}
+
+- (CGRect)bounds {
+	            %orig;
+return CGRectMake(0, 0, 430, 44);
+}
+- (CGPoint)center {
+	            %orig;
+return CGPointMake(215, 37);
+}
+%end
