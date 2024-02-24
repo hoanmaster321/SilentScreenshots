@@ -5,7 +5,7 @@
 %hook UIStatusBar_Modern
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(-20, -19, 400, 54);
+return CGRectMake(0, -19, 400, 54);
 }
 %end
 //
