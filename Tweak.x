@@ -3,7 +3,7 @@
 @interface UIStatusBar_Modern : UIView
 @end 
 %hook UIStatusBar_Modern
-- (CGRect)frame {
+- (CGRect)bounds {
 	            %orig;
 return CGRectMake(-20, -19, 400, 54);
 }
