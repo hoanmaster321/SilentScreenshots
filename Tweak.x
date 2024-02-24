@@ -2,7 +2,7 @@
 
 @interface UIStatusBar_Modern : UIView
 @end 
-%hook UIStatusBar_Modern
+/*%hook UIStatusBar_Modern
 - (CGRect)frame {
 	            %orig;
 return CGRectMake(0, 0, 430, 54);
@@ -11,12 +11,12 @@ return CGRectMake(0, 0, 430, 54);
 	            %orig;
 return CGRectMake(0, 0, 430, 54);
 }
-%end
+%end*/
 
-%hook _UIStatusBarForegroundView
+%hook _UIStatusBar
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, 19, 430, 54);
+return CGRectMake(0, -19, 430, 35);
 }
 //- (CGRect)bounds {
 //	            %orig;
