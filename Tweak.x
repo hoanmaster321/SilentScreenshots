@@ -20,7 +20,7 @@ return CGRectMake(11, 0, 400, 54);
 %hook FBUIEmbeddedNavigationBar
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, 54, 430, 113);
+return CGRectMake(0, 0, 430, 113);
 }
 
 %end
