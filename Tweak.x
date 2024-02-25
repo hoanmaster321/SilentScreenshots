@@ -2,8 +2,7 @@
 
 @interface UIStatusBar_Modern : UIView
 @end 
-@interface UINavigationBar : UIView
-@end 
+
 %hook UIStatusBar_Modern
 - (CGRect)frame {
 	            %orig;
