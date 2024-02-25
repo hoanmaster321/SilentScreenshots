@@ -41,11 +41,11 @@ return CGPointMake(215, 66);
 %hook FBTransitioningComponentView
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, 0, 334, 113);
+return CGRectMake(0, -20, 334, 133);
 }
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(0, 0, 334, 113);
+return CGRectMake(0, -20, 334, 133);
 }
 - (CGPoint)center {
 	            %orig;
