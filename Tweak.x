@@ -18,7 +18,7 @@ return CGRectMake(11, 19, 400, 54);
 // fix facebook
 @interface FBUIEmbeddedNavigationBar : UIView
 @end 
-@interface FBTransparentView : UIView
+@interface FBTransitioningComponentView : UIView
 @end 
 @interface FBUIExpandableButton : UIView
 @end 
@@ -37,22 +37,22 @@ return CGRectMake(0, 0, 430, 133);
 return CGPointMake(215, 66);
 }
 %end
-/*
-%hook FBTransparentView
+
+%hook FBTransitioningComponentView
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, -25, 430, 133);
+return CGRectMake(0, 0, 334, 113);
 }
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(0, -25, 430, 133);
+return CGRectMake(0, 0, 334, 113);
 }
 - (CGPoint)center {
 	            %orig;
 return CGPointMake(215, 66);
 }
 %end
-*/
+
 
 %hook FBUIExpandableButton
 - (CGRect)frame {
