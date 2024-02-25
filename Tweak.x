@@ -38,6 +38,7 @@ return CGPointMake(215, 66);
 - (CGRect)frame {
 	            %orig;
 return CGRectMake(0, 0, 430, 133);
+}
 - (CGRect)bounds {
 	            %orig;
 return CGRectMake(0, 0, 430, 133);
