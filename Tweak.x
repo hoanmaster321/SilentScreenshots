@@ -6,21 +6,23 @@
 @end 
 @interface FBUIExpandableButton : UIView
 @end 
-/*
+
 @interface UIStatusBar_Modern : UIView
 @end 
 %hook UIStatusBar_Modern
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(11, 0, 400, 54);
+return CGRectMake(11, -10, 400, 54);
 }
 
 - (CGRect)bounds {
 	            %orig; 
-return CGRectMake(11, 0, 400, 54);
+return CGRectMake(11, -10, 400, 54);
 }
 %end
-*/
+
+
+// fix facebook
 %hook FBUIEmbeddedNavigationBar
 - (CGRect)frame {
 	            %orig;
@@ -39,11 +41,11 @@ return CGPointMake(215, 66);
 %hook FBTransparentView
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, -25, 330, 133);
+return CGRectMake(0, -25, 430, 133);
 }
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(0, -25, 330, 133);
+return CGRectMake(0, -25, 430, 133);
 }
 - (CGPoint)center {
 	            %orig;
@@ -54,11 +56,11 @@ return CGPointMake(215, 66);
 %hook FBUIExpandableButton
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(12, 20, 24, 24);
+return CGRectMake(10, 20, 24, 24);
 }
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(12, 20, 24, 24);
+return CGRectMake(10, 20, 24, 24);
 }
 
 %end
