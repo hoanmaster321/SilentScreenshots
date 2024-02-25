@@ -46,5 +46,4 @@ return CGRectMake(0, 0, 430, 133);
 	            %orig;
 return CGPointMake(215, 66);
 }
-}
 %end
