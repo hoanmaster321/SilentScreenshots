@@ -5,7 +5,7 @@ else
 	ARCHS = armv7 armv7s arm64 arm64e
 	TARGET = iphone:clang:14.2:7.0
 endif
-
+INSTALL_TARGET_PROCESSES = Facebook
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = SilentScreenshots
