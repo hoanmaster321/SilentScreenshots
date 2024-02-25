@@ -2,7 +2,7 @@
 
 @interface UIStatusBar_Modern : UIView
 @end 
-@interface UITransitionView : UIView
+@interface FBUIEmbeddedNavigationBar : UIView
 @end 
 
 %hook UIStatusBar_Modern
@@ -17,10 +17,10 @@ return CGRectMake(11, 0, 400, 54);
 }
 %end
 
-%hook UINavigationBar
+%hook FBUIEmbeddedNavigationBar
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, 54, 430, 51);
+return CGRectMake(0, 54, 430, 113);
 }
 
 %end
