@@ -1,10 +1,11 @@
 #include <UIKit/UIKit.h>
 
-@interface UIStatusBar_Modern : UIView
-@end 
+
 @interface FBUIEmbeddedNavigationBar : UIView
 @end 
-
+/*
+@interface UIStatusBar_Modern : UIView
+@end 
 %hook UIStatusBar_Modern
 - (CGRect)frame {
 	            %orig;
@@ -16,12 +17,26 @@ return CGRectMake(11, 0, 400, 54);
 return CGRectMake(11, 0, 400, 54);
 }
 %end
+*/
+
 
 %hook FBUIEmbeddedNavigationBar
 - (CGRect)frame {
 	            %orig;
 return CGRectMake(0, 0, 430, 113);
 }
-
 %end
 
+%hook UIView
+- (CGRect)frame {
+	            %orig;
+return CGRectMake(0, 0, 430, 113);
+}
+%end
+
+%hook FBTransparentView
+- (CGRect)frame {
+	            %orig;
+return CGRectMake(0, 0, 430, 113);
+}
+%end
