@@ -1,8 +1,5 @@
 #include <UIKit/UIKit.h>
 
-
-@interface FBUIEmbeddedNavigationBar : UIView
-@end 
 @interface FBTransparentView : UIView
 @end 
 /*
@@ -20,18 +17,9 @@ return CGRectMake(11, 0, 400, 54);
 }
 %end
 */
-
-
-%hook FBUIEmbeddedNavigationBar
-- (CGRect)frame {
-	            %orig;
-return CGRectMake(0, 54, 430, 113);
-}
-%end
-
 %hook FBTransparentView
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, 54, 430, 113);
+return CGRectMake(0, 27, 430, 98);
 }
 %end
