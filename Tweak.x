@@ -3,8 +3,6 @@
 
 @interface FBUIEmbeddedNavigationBar : UIView
 @end 
-@interface UIView : UIView
-@end 
 @interface FBTransparentView : UIView
 @end 
 /*
@@ -25,13 +23,6 @@ return CGRectMake(11, 0, 400, 54);
 
 
 %hook FBUIEmbeddedNavigationBar
-- (CGRect)frame {
-	            %orig;
-return CGRectMake(0, 0, 430, 113);
-}
-%end
-
-%hook UIView
 - (CGRect)frame {
 	            %orig;
 return CGRectMake(0, 0, 430, 113);
