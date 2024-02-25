@@ -15,7 +15,7 @@ return CGRectMake(13, 13, 430, 44);
 
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(0, 0, 430, 20);
+return CGRectMake(13, 13, 430, 44);
 }
 - (CGPoint)center {
 	            %orig;
@@ -31,7 +31,7 @@ return CGRectMake(13, 13, 430, 44);
 
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(0, 0, 430, 20);
+return CGRectMake(13, 13, 430, 44);
 }
 - (CGPoint)center {
 	            %orig;
@@ -47,7 +47,7 @@ return CGRectMake(13, 13, 430, 44);
 
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(0, 0, 430, 20);
+return CGRectMake(13, 13, 430, 44);
 }
 - (CGPoint)center {
 	            %orig;
