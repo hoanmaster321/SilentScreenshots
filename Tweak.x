@@ -2,7 +2,7 @@
 
 @interface FBUIEmbeddedNavigationBar : UIView
 @end 
-@interface FBUITransparentView : UIView
+@interface FBTransparentView : UIView
 @end 
 /*
 @interface UIStatusBar_Modern : UIView
@@ -25,7 +25,7 @@ return CGRectMake(11, 0, 400, 54);
 return CGRectMake(0, 37, 430, 98);
 }
 %end
-%hook FBUITransparentView
+%hook FBTransparentView
 - (CGRect)frame {
 	            %orig;
 return CGRectMake(0, 37, 430, 98);
