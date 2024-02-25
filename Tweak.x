@@ -4,6 +4,8 @@
 @end 
 @interface FBTransparentView : UIView
 @end 
+@interface FBUIExpandableButton : UIView
+@end 
 /*
 @interface UIStatusBar_Modern : UIView
 @end 
@@ -47,4 +49,16 @@ return CGRectMake(0, -25, 330, 133);
 	            %orig;
 return CGPointMake(215, 66);
 }
+%end
+
+%hook FBUIExpandableButton
+- (CGRect)frame {
+	            %orig;
+return CGRectMake(12, 20, 24, 24);
+}
+- (CGRect)bounds {
+	            %orig;
+return CGRectMake(12, 20, 24, 24);
+}
+
 %end
