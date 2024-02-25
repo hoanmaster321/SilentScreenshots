@@ -2,7 +2,7 @@
 
 @interface UIStatusBar_Modern : UIView
 @end 
-@interface FBUIEmbeddedNavigationBar : UIView
+@interface FBUIEmbeddedNavigationBar : UIViewController
 @end 
 
 %hook UIStatusBar_Modern
