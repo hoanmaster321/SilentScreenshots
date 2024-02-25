@@ -6,8 +6,6 @@ else
 	TARGET = iphone:clang:14.2:7.0
 endif
 
-INSTALL_TARGET_PROCESSES = SpringBoard
-
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = SilentScreenshots
