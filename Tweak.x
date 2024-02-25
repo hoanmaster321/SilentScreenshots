@@ -22,12 +22,20 @@ return CGRectMake(11, 0, 400, 54);
 %hook FBUIEmbeddedNavigationBar
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, 37, 430, 98);
+return CGRectMake(0, 0, 430, 133);
 }
 %end
+
+%hook UIView
+- (CGRect)frame {
+	            %orig;
+return CGRectMake(0, 0, 430, 133);
+}
+%end
+
 %hook FBTransparentView
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, 37, 430, 98);
+return CGRectMake(0, 0, 430, 133);
 }
 %end
