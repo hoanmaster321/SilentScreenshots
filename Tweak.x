@@ -5,15 +5,12 @@
 %hook _UIStatusBar
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(7, 10, 400, 44);
+return CGRectMake(8, 10, 400, 20);
 }
 
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(7, 10, 400, 44);
+return CGRectMake(8, 10, 400, 20);
 }
-- (CGPoint)center {
-	            %orig;
-return CGPointMake(211, 33);
-}
+
 %end
