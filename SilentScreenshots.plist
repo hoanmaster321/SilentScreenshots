@@ -2,6 +2,7 @@
 Filter = 
 { Bundles = ( "com.facebook.Facebook" );
 };
+Filter = 
 { Bundles = ( "com.apple.springboard" )
 };
 }
