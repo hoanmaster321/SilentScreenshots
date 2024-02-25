@@ -17,10 +17,6 @@ return CGRectMake(13, 20, 400, 54);
 	            %orig;
 return CGRectMake(13, 20, 400, 54);
 }
-- (CGPoint)center {
-	            %orig;
-return CGPointMake(215, 54);
-}
 %end
 
 %hook _UIStatusBar
@@ -33,26 +29,19 @@ return CGRectMake(13, 20, 400, 54);
 	            %orig;
 return CGRectMake(13, 20, 400, 54);
 }
-- (CGPoint)center {
-	            %orig;
-return CGPointMake(215, 54);
-}
 %end
 
 %hook UIStatusBar_ForegroundView
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(13, 20, 400, 54);
+return CGRectMake(13, 20, 400, 74);
 }
 
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(13, 20, 400, 54);
+return CGRectMake(13, 20, 400, 74);
 }
-- (CGPoint)center {
-	            %orig;
-return CGPointMake(215, 54);
-}
+
 %end
 
 
