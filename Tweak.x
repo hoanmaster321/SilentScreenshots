@@ -35,5 +35,9 @@ return CGRectMake(0, 0, 430, 113);
 %orig;
 return CGRectMake(0, 0, 430, 113);
 }
+- (CGRect)bounds {	            
+%orig;
+return CGRectMake(0, 0, 430, 113);
+}
 %end
 
