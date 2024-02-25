@@ -1,11 +1,3 @@
-#include <UIKit/UIKit.h>
-
-@interface UIStatusBar_Modern : UIView
-@end 
-@interface _UIStatusBar : UIView
-@end 
-@interface _UIStatusBarForegroundView : UIView
-@end 
 
 %hook UIStatusBar_Modern
 - (CGRect)frame {
