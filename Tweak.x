@@ -3,6 +3,10 @@
 
 @interface FBUIEmbeddedNavigationBar : UIView
 @end 
+@interface UIView : UIView
+@end 
+@interface FBTransparentView : UIView
+@end 
 /*
 @interface UIStatusBar_Modern : UIView
 @end 
