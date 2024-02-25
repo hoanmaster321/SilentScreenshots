@@ -21,6 +21,7 @@ return CGRectMake(0, 0, 430, 20);
 	            %orig;
 return CGPointMake(211, 33);
 }
+%end
 
 %hook _UIStatusBar
 - (CGRect)frame {
@@ -36,6 +37,7 @@ return CGRectMake(0, 0, 430, 20);
 	            %orig;
 return CGPointMake(211, 33);
 }
+%end
 
 %hook _UIStatusBarForegroundView
 - (CGRect)frame {
