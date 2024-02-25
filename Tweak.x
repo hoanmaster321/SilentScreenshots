@@ -20,12 +20,12 @@ return CGRectMake(0, 0, 430, 54);
 %hook _UIStatusBar
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(11, 20, 400, 54);
+return CGRectMake(13, 20, 400, 54);
 }
 
 - (CGRect)bounds {
 	            %orig;
-return CGRectMake(11, 20, 400, 54);
+return CGRectMake(13, 20, 400, 54);
 }
 %end
 
