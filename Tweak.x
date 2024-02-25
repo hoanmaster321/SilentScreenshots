@@ -1,14 +1,8 @@
 #include <UIKit/UIKit.h>
 
-@interface FBUIEmbeddedNavigationBar : UIView
-@end 
-@interface FBTransparentView : UIView
-@end 
-@interface FBUIExpandableButton : UIView
-@end 
-
 @interface UIStatusBar_Modern : UIView
-@end 
+@end
+
 %hook UIStatusBar_Modern
 - (CGRect)frame {
 	            %orig;
@@ -21,8 +15,14 @@ return CGRectMake(11, -10, 400, 54);
 }
 %end
 
-
 // fix facebook
+@interface FBUIEmbeddedNavigationBar : UIView
+@end 
+@interface FBTransparentView : UIView
+@end 
+@interface FBUIExpandableButton : UIView
+@end 
+
 %hook FBUIEmbeddedNavigationBar
 - (CGRect)frame {
 	            %orig;
