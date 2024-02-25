@@ -1,9 +1,9 @@
 #include <UIKit/UIKit.h>
 
-@interface FBTransparentView : UIView
+@interface FBUIEmbeddedNavigationBar : UIView
 @end 
 /*
-@interface FBUIEmbeddedNavigationBar : UIView
+@interface UIStatusBar_Modern : UIView
 @end 
 %hook UIStatusBar_Modern
 - (CGRect)frame {
