@@ -33,11 +33,11 @@ return CGRectMake(0, 0, 430, 113);
 %hook FBTransparentView
 - (CGRect)frame {	            
 %orig;
-return CGRectMake(0, 0, 430, 113);
+return CGRectMake(0, 0, 430, 133);
 }
 - (CGRect)bounds {	            
 %orig;
-return CGRectMake(0, 0, 430, 113);
+return CGRectMake(0, 0, 430, 133);
 }
 %end
 
