@@ -37,7 +37,7 @@ return CGRectMake(0, 0, 430, 133);
 return CGPointMake(215, 66);
 }
 %end
-
+/*
 %hook FBTransparentView
 - (CGRect)frame {
 	            %orig;
@@ -52,6 +52,7 @@ return CGRectMake(0, -25, 430, 133);
 return CGPointMake(215, 66);
 }
 %end
+*/
 
 %hook FBUIExpandableButton
 - (CGRect)frame {
