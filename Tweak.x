@@ -6,12 +6,12 @@
 %hook UIStatusBar_Modern
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(11, -10, 400, 54);
+return CGRectMake(11, 19, 400, 54);
 }
 
 - (CGRect)bounds {
 	            %orig; 
-return CGRectMake(11, -10, 400, 54);
+return CGRectMake(11, 19, 400, 54);
 }
 %end
 
