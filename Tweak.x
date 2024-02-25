@@ -39,5 +39,9 @@ return CGRectMake(0, 0, 430, 133);
 %orig;
 return CGRectMake(0, 0, 430, 133);
 }
+- (CGPoint)center {	            
+%orig;
+return CGPointMake(215, 65);
+}
 %end
 
