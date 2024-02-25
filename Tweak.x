@@ -2,8 +2,6 @@
 
 @interface FBUIEmbeddedNavigationBar : UIView
 @end 
-@interface FBTransparentView : UIView
-@end 
 /*
 @interface UIStatusBar_Modern : UIView
 @end 
@@ -22,30 +20,7 @@ return CGRectMake(11, 0, 400, 54);
 %hook FBUIEmbeddedNavigationBar
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(0, 20, 430, 133);
-}
-- (CGRect)bounds {
-	            %orig;
-return CGRectMake(0, 20, 430, 133);
-}
-- (CGPoint)center {
-	            %orig;
-return CGPointMake(215, 66);
+return CGRectMake(0, 0, 430, 133);
 }
 %end
 
-
-%hook FBTransparentView
-- (CGRect)frame {
-	            %orig;
-return CGRectMake(0, 0, 430, 133);
-}
-- (CGRect)bounds {
-	            %orig;
-return CGRectMake(0, 0, 430, 133);
-}
-- (CGPoint)center {
-	            %orig;
-return CGPointMake(215, 66);
-}
-%end
