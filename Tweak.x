@@ -10,11 +10,6 @@
 %hook UIStatusBar_Modern
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(-3, 13, 430, 44);
-}
-
-- (CGRect)bounds {
-	            %orig;
 return CGRectMake(0, 0, 430, 20);
 }
 - (CGPoint)center {
@@ -25,11 +20,6 @@ return CGPointMake(211, 33);
 
 %hook _UIStatusBar
 - (CGRect)frame {
-	            %orig;
-return CGRectMake(-3, 13, 430, 44);
-}
-
-- (CGRect)bounds {
 	            %orig;
 return CGRectMake(0, 0, 430, 20);
 }
@@ -42,13 +32,9 @@ return CGPointMake(211, 33);
 %hook _UIStatusBarForegroundView
 - (CGRect)frame {
 	            %orig;
-return CGRectMake(-3, 13, 430, 44);
-}
-
-- (CGRect)bounds {
-	            %orig;
 return CGRectMake(0, 0, 430, 20);
 }
+
 - (CGPoint)center {
 	            %orig;
 return CGPointMake(211, 33);
