@@ -2,7 +2,7 @@
 
 @interface UIStatusBar_Modern : UIView
 @end 
-@interface UIStatusBar_Modern : UIView
+@interface UINavigationBar : UIView
 @end 
 
 %hook UIStatusBar_Modern
