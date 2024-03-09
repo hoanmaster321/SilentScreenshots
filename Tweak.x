@@ -31,10 +31,10 @@ CGFloat xPos =  0;
 CGFloat yPos =  20.5;
 CGFloat xNot = 0.0;
 CGFloat yNot = 80;
-  static BOOL showFavorites;
-  static BOOL showRecents;
-  static BOOL showContacts;
-  static BOOL showKeypad;
+  CGFloat showFavorites;
+  CGFloat showRecents;
+  CGFloat showContacts;
+  CGFloat showKeypad;
 %hook _UIBatteryView
 {
 - (CGRect)frame {
