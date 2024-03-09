@@ -45,5 +45,6 @@ self.transform = CGAffineTransformMakeScale(scale, scale);
             frame.origin.x = SxPos;
         }
         self.frame = frame;
+}
 %end
 
