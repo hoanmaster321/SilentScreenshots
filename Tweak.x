@@ -31,10 +31,24 @@ CGFloat xPos =  0;
 CGFloat yPos =  20.5;
 CGFloat xNot = 0.0;
 CGFloat yNot = 80;
+  static BOOL showFavorites;
+  static BOOL showRecents;
+  static BOOL showContacts;
+  static BOOL showKeypad;
+%hook _UIBatteryView
+{
+- (CGRect)frame {
+	            %orig(showFavorites, showRecents, showContacts, showKeypad);
+}
+%end
+
+
 %hook SBSystemApertureWindow
 
 - (void)layoutSubviews {
     %orig;
+if (showFavorites >362)
+{
 self.transform = CGAffineTransformMakeScale(scale, scale);
         %orig;
         CGFloat SyPos = yPos / scale;
@@ -45,6 +59,7 @@ self.transform = CGAffineTransformMakeScale(scale, scale);
             frame.origin.x = SxPos;
         }
         self.frame = frame;
+}
 }
 %end
 
