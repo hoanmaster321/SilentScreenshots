@@ -1,5 +1,1 @@
-{
-Filter = 
-{ Bundles = ( "com.facebook.Facebook","com.apple.springboard" );
-};
-}
+{ Filter = { Bundles = ( "com.apple.springboard", "com.apple.UIKit" ); }; }
