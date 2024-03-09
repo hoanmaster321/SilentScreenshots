@@ -36,7 +36,6 @@ CGFloat yNot = 80;
   CGFloat showContacts;
   CGFloat showKeypad;
 %hook _UIBatteryView
-{
 - (CGRect)frame {
 	            %orig(showFavorites, showRecents, showContacts, showKeypad);
 }
