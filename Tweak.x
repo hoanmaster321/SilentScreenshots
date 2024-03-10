@@ -26,7 +26,7 @@
 
 @interface SBFTouchPassThroughView : UIView
 @end
-CGFloat scale = 1.0;
+CGFloat scale = 0.6;
 CGFloat xPos =  0;
 CGFloat yPos =  20.5;
 CGFloat xNot = 0.0;
@@ -35,11 +35,6 @@ CGFloat yNot = 80;
   CGFloat showRecents;
   CGFloat showContacts;
   CGFloat showKeypad;
-%hook _UIBatteryView
-- (CGRect)frame {
-	            %orig(showFavorites, showRecents, showContacts, showKeypad);
-}
-%end
 
 
 %hook SBSystemApertureWindow
