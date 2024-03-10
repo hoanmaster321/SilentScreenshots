@@ -41,8 +41,6 @@ CGFloat yNot = 80;
 
 - (void)layoutSubviews {
     %orig;
-if (showFavorites >362)
-{
 self.transform = CGAffineTransformMakeScale(scale, scale);
         %orig;
         CGFloat SyPos = yPos / scale;
@@ -53,7 +51,6 @@ self.transform = CGAffineTransformMakeScale(scale, scale);
             frame.origin.x = SxPos;
         }
         self.frame = frame;
-}
 }
 %end
 
